@@ -15,12 +15,23 @@ export const styles = StyleSheet.create({
     backgroundColor: '#3B71F3',
   },
 
+  container_SECONDARY: {
+    borderColor: '#3B71F3',
+    borderWidth: 2,
+  },
+
   container_TERTIARY: {},
+
   text: {
     fontWeight: 'bold',
     color: 'white',
   },
+
   text_TERTIARY: {
     color: 'gray',
+  },
+
+  text_SECONDARY: {
+    color: '#3B71F3',
   },
 });

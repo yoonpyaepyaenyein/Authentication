@@ -6,6 +6,7 @@ import Logo from '../../../assets/images/Logo_1.png';
 import {styles} from './style';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton';
+import SocialSignInButtons from '../../components/SocialSignInButtons';
 
 const SignInScreen = () => {
   const [username, setUsername] = useState('');
@@ -64,24 +65,7 @@ const SignInScreen = () => {
           type="TERTIARY"
         />
 
-        <CustomButton
-          text="Sign In With Facebook"
-          onPress={onSignInFacebook}
-          bgColor="#E7EAF4"
-          FgColor="#4765A9"
-        />
-        <CustomButton
-          text="Sign In With Google"
-          onPress={onSignInGoogle}
-          bgColor="#FAE9EA"
-          FgColor="#DD4D44"
-        />
-        <CustomButton
-          text="Sign In With Apple"
-          onPress={onSignInApple}
-          bgColor="#e3e3e3"
-          FgColor="#363636"
-        />
+        <SocialSignInButtons />
 
         <CustomButton
           text="Don't have an account? Create one"
